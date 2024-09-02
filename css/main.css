@@ -1,0 +1,437 @@
+/* Importy fontov */
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+/* Globálne premeny */
+:root {
+    --lg-font: 'Kaisei Tokumin', serif;
+    --sm-font: 'Poppins', sans-serif;
+    --primary-color: rgb(175, 155, 22);
+    --secondary-color: #343a40;
+    --text-color: #ffffff;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Telo stránky */
+body {
+    font-family: var(--sm-font), serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(223, 223, 223, 0.925); /* Transparentný na začiatku */
+    transition: background-color 0.3s ease; /* Plynulý prechod farby */
+}
+
+/* Zmena farby textu ikoniek pred skrolovaním */
+.navbar .nav-link {
+    color: black !important; /* Tmavá farba pred skrolovaním */
+}
+
+.navbar-scrolled {
+    background-color: #282424; /* Čierna farba po skrolovaní */
+    box-shadow: 0 3px 9px 3px var(--shadow-color); /* Pridajte tieň */
+}
+
+/* Zmena farby textu v navbare po skrolovaní */
+.navbar-scrolled .nav-link {
+    color: #ffffff !important; /* Biela farba po skrolovaní */
+}
+
+.navbar-scrolled .navbar-brand span {
+    color: #ffffff !important; /* Biela farba textu značky po skrolovaní */
+}
+
+/* Ostatné nastavenia */
+.navbar-brand img {
+    width: 25px;
+}
+
+.navbar-brand span {
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+    color: black !important; /* Čierna farba textu značky na začiatku */
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+.nav-item {
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Ikona dropdown menu */
+.dropdown-icon {
+    width: 30px; /* Nastav veľkosť podľa potreby */
+    height: auto;
+}
+
+html {
+    scroll-behavior: auto !important; /* Zruší plynulý prechod pri scrollovaní */
+}
+
+
+
+/* Header */
+#header {
+    background: url(../images/ikony/breadUvodka.jpg) center/cover no-repeat;
+    position: relative;
+    padding-bottom: 100px; /* Pridaj padding na spodok, aby si uvoľnil miesto pre ikony */
+}
+
+/* Pre obrazovky väčšie ako 991px (napr. tablety a desktop) */
+@media (min-width: 992px) {
+    #header {
+        background-position: center;
+    }
+}
+
+/* Pre mobily (obrazovky menšie ako 991px) */
+@media (max-width: 991px) {
+    #header {
+        background-position: calc(10% + 10px) bottom;
+    }
+}
+
+/* Pre veľmi malé obrazovky (napr. mobily s rozlíšením menej ako 576px) */
+@media (max-width: 576px) {
+    #header {
+        background-position: calc(10% + 10px) bottom;
+    }
+}
+
+/* Text v Header */
+.pekaren {
+    font-size: 80px;
+    margin-left: 60px;
+    font-family: "Kaushan Script", cursive;
+    color: var(--text-color) !important;
+    text-shadow: 12px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.kama {
+    font-size: 160px;
+    margin-top: -15px;
+    font-family: "Kaushan Script", cursive;
+    color: var(--text-color) !important;
+    text-shadow: 12px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.okamih {
+    font-size: 70px;
+    margin-top: -1px;
+    margin-left: 30px;
+    font-family: "Great Vibes", cursive;
+    color: rgb(255, 221, 0) !important;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8), 1px 1px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Pre tablety */
+@media (max-width: 991px) {
+    .pekaren { font-size: 60px; }
+    .kama { font-size: 120px; }
+    .okamih { font-size: 50px; }
+}
+
+/* Pre mobily */
+@media (max-width: 576px) {
+    .pekaren { font-size: 40px; }
+    .kama { font-size: 80px; }
+    .okamih { font-size: 35px; }
+}
+
+
+/* Ikony kontajner */
+.icons-container {
+    display: flex;
+    flex-wrap: wrap; /* Pre podporu viacerých riadkov, ak je to potrebné */
+    justify-content: center;
+    gap: 15px; /* Vzdialenosť medzi ikonami a textami */
+    padding: 20px; /* Padding pre menšie obrazovky */
+}
+
+/* Ikona a text */
+.icon-item {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Vzdialenosť medzi ikonou a textom */
+    flex: 1 1 auto; /* Umožni ikony a textu sa prispôsobiť kontajneru */
+    min-width: 80px; /* Minimálna šírka pre každú ikonu a text */
+    max-width: 150px; /* Maximálna šírka pre každú ikonu a text */
+}
+
+/* Ikona */
+.icon {
+    width: 60px; /* Veľkosť ikonky, môžeš upraviť */
+    height: auto;
+}
+
+/* Text */
+.icon-text {
+    font-size: 16px; /* Veľkosť písma pre text pri ikonách */
+    color: #fff; /* Svetlá farba textu */
+}
+
+/* Text sekcia */
+.text-section {
+    font-family: var(--sm-font); /* Použitie rovnakého fontu ako zvyšok stránky */
+    color: #fff; /* Svetlý text */
+    text-align: center; /* Centrovanie textu */
+    margin-top: 30px; /* Vzdialenosť od ikon */
+}
+
+.text-section h2 {
+    font-size: 30px; /* Veľkosť písma pre nadpis */
+    margin-bottom: 20px; /* Vzdialenosť pod nadpisom */
+}
+
+.text-section p {
+    font-size: 18px; /* Veľkosť písma pre text */
+    line-height: 1.6; /* Rozostup riadkov pre lepšiu čitateľnosť */
+    margin: 0 0 15px; /* Vzdialenosť medzi odsekmi */
+}
+
+/* Pre mobilné zariadenia */
+@media (max-width: 576px) {
+    .icon-text {
+        font-size: 12px; /* Menšie písmo pre text pri ikonách */
+    }
+
+    .text-section {
+        font-size: 14px; /* Menšie písmo pre mobilné zariadenia */
+    }
+}
+
+/* Pre tablety */
+@media (max-width: 768px) {
+    .icon-text {
+        font-size: 14px; /* Trochu väčšie písmo pre tablety */
+    }
+
+    .text-section {
+        font-size: 15px; /* Trochu väčšie písmo pre tablety */
+    }
+}
+
+
+/* Tlačidlá */
+.btn {
+    background-color: var(--secondary-color); /* Štandardná farba pozadia */
+    color: var(--text-color); /* Farba textu */
+    padding: 10px 28px;
+    border-radius: 25px !important;
+    border: 1px solid var(--border-color);
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--primary-color); /* Hover efekt */
+    color: #ffffff;
+    border-color: var(--primary-color);
+}
+
+/* Odstrániť modrý okraj pri zameraní tlačidla */
+.btn:focus,
+.btn:active {
+    outline: none !important; /* Odstráni okraj pri focus */
+    box-shadow: none !important; /* Odstráni tieň pri focus */
+}
+
+/* Špecifické tlačidlo pre kolekcie */
+.filter-button-group .btn {
+    color: var(--text-color) !important; /* Farba textu na neaktívnych tlačidlách */
+    border-color: #2c2b2b !important; /* Farba okraja na neaktívnych tlačidlách */
+}
+
+.filter-button-group .btn:hover {
+    color: var(--text-color) !important; /* Farba textu na hover */
+}
+
+.active-filter-btn {
+    background-color: var(--primary-color) !important; /* Farba pozadia aktívneho tlačidla */
+    color: var(--text-color) !important; /* Farba textu aktívneho tlačidla */
+}
+
+/* Zmena farby textu na neaktívnych tlačidlách */
+.filter-button-group .btn:not(.active-filter-btn) {
+    color: var(--text-color) !important; /* Farba textu na neaktívnych tlačidlách */
+}
+
+/* Základné štýly pre karty */
+.card {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 12px rgb(155, 137, 21);
+    text-align: center;
+}
+
+.card img {
+    max-height: 400px;
+    object-fit: contain;
+    width: 100%;
+}
+
+.card-body {
+    background-color: rgba(232, 231, 227, 0.431);
+    color: #343a40;
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Rozloženie kariet pre veľké obrazovky (desktop) */
+.collection-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.collection-list .col-lg-4 {
+    flex: 1 1 calc(33.333% - 15px); /* 3 karty na rade, 1/3 šírky minus medzera */
+}
+
+/* Rozloženie kariet pre menšie obrazovky (tablety a mobily) */
+@media (max-width: 991px) {
+    .collection-list .col-lg-4 {
+        flex: 1 1 calc(50% - 15px); /* 2 karty na rade pre tablety a menšie zariadenia */
+    }
+}
+
+/* Rozloženie kariet pre malé obrazovky (mobily) */
+@media (max-width: 576px) {
+    .collection-list .col-lg-4 {
+        flex: 1 1 100%; /* 1 karta na rade pre mobily */
+    }
+}
+
+
+/* Štýly pre sekciu alergény */
+.alergeny-section {
+    background-size: cover; /* Zabezpečí, že pozadie pokryje celý element */
+    background-position: center; /* Umiestni pozadie do stredu sekcie */
+    background-repeat: no-repeat; /* Zabráni opakovaniu pozadia */
+}
+
+.alergeny-img {
+    max-width: 100%; /* Zabezpečí, že obrázok sa prispôsobí šírke kontajnera */
+    height: auto; /* Zachováva pomer strán obrázka */
+}
+
+/* Kontakt / objednávka sekcia */
+
+#objednavka .container {
+    box-shadow: 0px 0px 20px rgb(155, 137, 21); /* Vonkajsi okraj boxu */
+    padding: 40px; /* Vnútorný odstup pre obsah formulára */
+    border-radius: 10px; /* Zaoblené rohy */
+    
+}
+
+
+#objednavka .form-control,
+#objednavka .form-select {
+    border: 2px solid #8e906e; /* Svetlosivý rámik */
+    color: #ffffff; /* Biela farba textu */
+}
+
+#objednavka .form-control::placeholder {
+    color: #bdadad; /* Svetlosivý placeholder */
+}
+
+#objednavka .form-control:focus,
+#objednavka .form-select:focus {
+    color: #ffffff;
+}
+
+#objednavka .btn-primary {
+    border: 2px solid #8e906e;
+}
+
+/* Upozornenie */
+.text-warning {
+    color: #fc7171 !important; /* Žltá farba textu */
+}
+/* Ak chcete pridať aj margin, aby bol odstup medzi položkami väčší */
+.list-unstyled li {
+   margin-top: 40px;
+}
+
+/* Ak chcete zmeniť farbu ikoniek kalendára a času na bielu */
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+    filter: invert(1); /* Invertovanie farieb, aby sa ikony stali bielymi */
+    width: 3rem; /* Zvýšiť šírku ikony */
+    
+}
+
+/* Pre Firefox a iné prehliadače */
+input[type="date"]::-moz-calendar-picker-indicator,
+input[type="time"]::-moz-calendar-picker-indicator {
+    color: #ffffff; /* Nastavenie farby textu na bielu, ak to prehliadač podporuje */
+    width: 3rem; /* Zvýšiť šírku ikony */
+    
+}
+
+/* Kontakty sekcia */
+#kontakty {
+    background-color: #343a40; /* Tmavé pozadie sekcie */
+    color: #f8f9fa; /* Svetlá farba textu */
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #00bfff; /* Svetlá farba pre odkazy */
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Prispôsobenie výšky obrázka albumu */
+#kontakty .col-md-6 img {
+    height: 100%; /* Výška obrázka sa prispôsobí kontajneru */
+    max-height: 500px; /* Nastavte maximálnu výšku obrázka podľa potreby */
+    object-fit: cover; /* Umožňuje prispôsobenie obrázka bez deformácie */
+    width: 100%; /* Šírka obrázka sa prispôsobí kontajneru */
+}
+
+/* Uistite sa, že kontajner obrázka má správnu výšku */
+#kontakty .col-md-6 {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Horizontálne zarovnanie obrázka */
+    height: auto; /* Výška kontajnera sa prispôsobí obrázku */
+    max-height: 500px; /* Nastavte maximálnu výšku podľa výšky stĺpca s kontaktmi */
+}
+
+
+
+
+
+
+
+
+/* media queries */
+@media(min-width: 992px){
+    .nav-item{
+        border-bottom: none;
+    }
+}
