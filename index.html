@@ -1405,6 +1405,16 @@
 
                         <div class="col-lg-4 col-md-6 col-sm-12 mb-4 bezlepkove">
                             <div class="card">
+                                <img src="images/bezlepkove/bezlepkovaBagetaNew.webp" class="card-img-top" alt="Pastry 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bagetka bez pšenice 75 g</h5>
+                                    <p class="card-text"></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4 bezlepkove">
+                            <div class="card">
                                 <img src="images/bezlepkove/bezlepkovyChlieb.png" class="card-img-top" alt="Pastry 3">
                                 <div class="card-body">
                                     <h5 class="card-title">Chlieb bez pšenice 500 g</h5>
@@ -1499,8 +1509,11 @@
 <section id="objednavka" class="py-5 bg-dark text-white">
     <div class="container">
         <h2 class="text-center mb-4 text-uppercase">Objednávka</h2>
-        <form id="contact-form" class="row g-3">
+        <form id="contact-form" class="row g-3" action="https://api.web3forms.com/submit" method="POST">
             
+            <!-- Skrytý prístupový kľúč -->
+            <input type="hidden" name="access_key" value="7981c72b-d358-473c-a6c1-5e027306fc7e">
+
             <!-- Meno -->
             <div class="col-md-6">
                 <input type="text" id="name" name="name" class="form-control bg-transparent text-white" required placeholder="Meno">
@@ -1511,21 +1524,21 @@
                 <input type="email" id="email" name="email" class="form-control bg-transparent text-white" required placeholder="Email">
             </div>
            
-            <!-- Subject -->
-            <div class="col-md-6">
-                <input type="text" id="subject" name="subject" class="form-control bg-transparent text-white" required placeholder="Subject">
-            </div>
-            
             <!-- Správa -->
             <div class="col-12">
                 <textarea id="message" name="message" class="form-control bg-transparent text-white" rows="5" required placeholder="Správa"></textarea>
             </div>
-            
+
+            <!-- Honeypot na ochranu proti spamu -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
             <!-- Tlačidlo odoslania -->
             <div class="col-12 text-center">
                 <button type="submit" class="btn btn-primary text-uppercase" id="submit-btn">Odoslať</button>
             </div>
+
+            <!-- Presmerovanie po úspešnom odoslaní -->
+            <input type="hidden" name="redirect" value="https://pekarenkama.sk/dakujeme.html">
         </form>
         <hr>
          
