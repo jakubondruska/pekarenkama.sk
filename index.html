@@ -17,8 +17,10 @@
     <link rel="stylesheet" href="css/main.css">
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-    
-    
+     <!-- Lightbox2 CSS -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    </head>
+
 </head>
 <body>
 
@@ -48,6 +50,9 @@
                         <a class="nav-link text-uppercase text-dark" href="#objednavka">Objednávka</a>
                     </li>
                     <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="#galeria">Galéria</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
                         <a class="nav-link text-uppercase text-dark" href="#alergeny">Alergény</a>
                     </li>
                     <li class="nav-item px-2 py-2 border-0">
@@ -57,6 +62,7 @@
             </div>
         </div>
     </nav>
+    
     <!-- end of navbar -->
 
     <!-- header -->
@@ -65,7 +71,6 @@
             <h1 class="text-uppercase pekaren mb-2">PEKÁREŇ</h1>
             <h1 class="text-uppercase py-2 fw-bold text-dark kama">KAMA</h1>
             <h2 class="text text-dark okamih mb-4">Vždy čerstvý okamih</h2>
-            <a href="#" class="btn btn-primary text-uppercase">Objednať</a>
         </div>
     </header>
     <!-- end of header -->
@@ -105,9 +110,6 @@
 </section>
 <!-- end of icons section -->
 
-
-
-    
 <!-- ZACIATOK KATEGORII -->
 
     <section id="collection" class="py-5 bg-light">
@@ -129,7 +131,6 @@
 
                 <div class="container my-5">
                     <div class="row collection-list">
-
 
                     <!-- SLADKE KVASNICOVE -->
                     
@@ -245,7 +246,6 @@
                         </div>
                     </div>
 
-
                     <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sladke">
                         <div class="card h-100">
                             <img src="images/sladke/kolacOrech.webp" class="card-img-top" alt="Pastry 3">
@@ -278,7 +278,6 @@
                         </div>
                     </div>
 
-
                     <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sladke">
                         <div class="card h-100">
                             <img src="images/sladke/kolacGazdovsky.webp" class="card-img-top" alt="Pastry 3">
@@ -295,7 +294,6 @@
                         </div>
                     </div>
 
-
                     <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sladke">
                         <div class="card h-100">
                             <img src="images/sladke/kolacMoravsky.webp" class="card-img-top" alt="Pastry 3">
@@ -311,7 +309,6 @@
                             </div>
                         </div>
                     </div>
-
 
                     <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sladke">
                         <div class="card h-100">
@@ -344,7 +341,6 @@
                             </div>
                         </div>
                     </div>
-
 
                     <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sladke">
                         <div class="card h-100">
@@ -457,7 +453,6 @@
                             </div>
                         </div>
                     </div>
-
 
                     <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sladke">
                         <div class="card h-100">
@@ -603,7 +598,6 @@
                         </div>
                     </div>
 
-                    
                     <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sladke">
                         <div class="card h-100">
                             <img src="images/sladke/vianocka.webp" class="card-img-top" alt="Pastry 3">
@@ -764,10 +758,6 @@
                         </div>
                     </div>
 
-                        
-
-
-
                     <!-- Rožky, bagety, chlieb -->
 
                     <div class="col-lg-4 col-md-6 col-sm-12 mb-4 rozky">
@@ -840,8 +830,6 @@
                             </div>
                         </div>
 
-                        
-                    
                         <div class="col-lg-4 col-md-6 col-sm-12 mb-4 rozky">
                             <div class="card">
                                 <img src="images/chliebRozkyOstatne/bielkovinovyChlien.webp" class="card-img-top" alt="Pastry 3">
@@ -861,8 +849,6 @@
                                 </div>
                             </div>
                         </div>
-
-                        
 
                         <div class="col-lg-4 col-md-6 col-sm-12 mb-4 rozky">
                             <div class="card">
@@ -1263,7 +1249,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <!-- Kváskové -->
 
                         <div class="col-lg-4 col-md-6 col-sm-12 mb-4 kvaskove">
@@ -1307,8 +1293,6 @@
                                 </div>
                             </div>
                         </div>
-
-
 
                         <div class="col-lg-4 col-md-6 col-sm-12 mb-4 kvaskove">
                             <div class="card">
@@ -1531,16 +1515,29 @@
                                 </div>
                             </div>
                         </div>
-
-
-
+                    </div>
+                    <div class="col-12 text-center mt-4 back-button zakusky" style="display: none;">
+                        <a class="btn btn-outline-dark text-uppercase px-4 py-2" href="#collection">Späť na kategórie</a>
+                    </div>
+                    <div class="col-12 text-center mt-4 back-button bezlepkove" style="display: none;">
+                        <a class="btn btn-outline-dark text-uppercase px-4 py-2" href="#collection">Späť na kategórie</a>
+                    </div>
+                    <div class="col-12 text-center mt-4 back-button kvaskove" style="display: none;">
+                        <a class="btn btn-outline-dark text-uppercase px-4 py-2" href="#collection">Späť na kategórie</a>
+                    </div>
+                    <div class="col-12 text-center mt-4 back-button slane" style="display: none;">
+                        <a class="btn btn-outline-dark text-uppercase px-4 py-2" href="#collection">Späť na kategórie</a>
+                    </div>
+                    <div class="col-12 text-center mt-4 back-button sladke" style="display: none;">
+                        <a class="btn btn-outline-dark text-uppercase px-4 py-2" href="#collection">Späť na kategórie</a>
+                    </div>
+                    <div class="col-12 text-center mt-4 back-button rozky" style="display: none;">
+                        <a class="btn btn-outline-dark text-uppercase px-4 py-2" href="#collection">Späť na kategórie</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    
 
     <!-- Kontaktná sekcia / Objednávka -->
 <section id="objednavka" class="py-5 bg-dark text-white">
@@ -1604,6 +1601,139 @@
     </div>
 </section>
 
+<!-- Gáleria sekcia -->
+
+<section id="galeria" class="container mt-5">
+    <h2 class="text-center mb-4">Galeria</h2>
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="gallery-item">
+                <img src="images/galeria/vchodVonka1.webp" alt="Image 1" class="img-fluid" loading="lazy">
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="gallery-item">
+                <img src="images/galeria/banerVrch.webp" alt="Image 3" class="img-fluid" loading="lazy">
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="gallery-item">
+                <img src="images/galeria/vchodVonka.webp" alt="Image 2" class="img-fluid" loading="lazy">
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="gallery-item">
+                <img src="images/galeria/vchodVnutro1.webp" alt="Image 3" class="img-fluid" loading="lazy">
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="gallery-item">
+                <img src="images/galeria/vchodVnutro.webp" alt="Image 3" class="img-fluid" loading="lazy">
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="gallery-item">
+                <img src="images/galeria/detskyKutik.webp" alt="Image 3" class="img-fluid" loading="lazy">
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="gallery-item">
+                <img src="images/galeria/detskyKutik1.webp" alt="Image 3" class="img-fluid" loading="lazy">
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="gallery-item">
+                <img src="images/galeria/stol1.webp" alt="Image 3" class="img-fluid" loading="lazy">
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="gallery-item">
+                <img src="images/galeria/stol2.webp" alt="Image 3" class="img-fluid" loading="lazy">
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="gallery-item">
+                <img src="images/galeria/stol3.webp" alt="Image 3" class="img-fluid" loading="lazy">
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="gallery-item">
+                <img src="images/galeria/kavaSialka.webp" alt="Image 3" class="img-fluid" loading="lazy">
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="gallery-item">
+                <img src="images/galeria/kavaTakeway.webp" alt="Image 3" class="img-fluid" loading="lazy">
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="gallery-item">
+                <img src="images/galeria/chladakZakusky.webp" alt="Image 3" class="img-fluid" loading="lazy">
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="gallery-item">
+                <img src="images/galeria/knedle.webp" alt="Image 3" class="img-fluid" loading="lazy">
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="gallery-item">
+                <img src="images/galeria/pultBabovky.webp" alt="Image 3" class="img-fluid" loading="lazy">
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="gallery-item">
+                <img src="images/galeria/pultBezlepkove.webp" alt="Image 3" class="img-fluid" loading="lazy">
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="gallery-item">
+                <img src="images/galeria/pultBezlepkove1.webp" alt="Image 3" class="img-fluid" loading="lazy">
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="gallery-item">
+                <img src="images/galeria/pultChleby.webp" alt="Image 3" class="img-fluid" loading="lazy">
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="gallery-item">
+                <img src="images/galeria/pultChleby1.webp" alt="Image 3" class="img-fluid" loading="lazy">
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="gallery-item">
+                <img src="images/galeria/pultKolace.webp" alt="Image 3" class="img-fluid" loading="lazy">
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="gallery-item">
+                <img src="images/galeria/pultKolace1.webp" alt="Image 3" class="img-fluid" loading="lazy">
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="gallery-item">
+                <img src="images/galeria/pultKvaskove.webp" alt="Image 3" class="img-fluid" loading="lazy">
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="gallery-item">
+                <img src="images/galeria/pultRozky.webp" alt="Image 3" class="img-fluid" loading="lazy">
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="gallery-item">
+                <img src="images/galeria/pultSlane.webp" alt="Image 3" class="img-fluid" loading="lazy">
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="gallery-item">
+                <img src="images/galeria/pultSlane2.webp" alt="Image 3" class="img-fluid" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Alergény sekcia -->
 <section id="alergeny" class="alergeny-section py-5 bg-light">
     <div class="container text-center">
@@ -1642,25 +1772,26 @@
                     <hr>
                     <p><i class="fas fa-building"></i> Katarína Čapová KAMA</p>
                     <p><i class="fas fa-map-marker-alt"></i> Adresa: Janka Kráľa 13, 95301 Zlaté Moravce</p>
-                    <p><i class="fas fa-id-card"></i> IČO: 51 323 796</p>
-                    <p><i class="fas fa-taxi"></i> DIČ: 1027 767 565</p>
+                    <p><i class="fas fa-id-card"></i> IČO : 51 323 796</p>
+                    <p><i class="fas fa-taxi"></i> DIČ : 1027 767 565</p>
                     <p><i class="fas fa-envelope"></i> Email: <a href="mailto:kama.cukraren@gmail.com" class="text-light">kama.cukraren@gmail.com</a></p>
-                    <p><i class="fas fa-phone"></i> Telefónne číslo: <a href="tel:+421948780975" class="text-light">+421 948 780 975</a></p>
+                    <p><i class="fas fa-phone"></i> Telefón : <a href="tel:+421948780975" class="text-light">+421 948 780 975</a></p>
+                    <p><i class="fas fa-phone"></i> Telefón : <a href="tel:+421987654321" class="text-light">+421 987 654 321</a></p>
                     <hr>
                     <p><i class="fas fa-clock"></i> Otváracie hodiny:
                         <br>
                         <br>
-                        Pondelok - Piatok: 6:00 - 17:00
+                        Pondelok - Piatok : 6:00 - 17:00
                         <br>
-                        Sobota: 7:00 - 12:00
+                        Sobota : 7:00 - 12:00
                     </p>
                 </div>
             </div>
-            <!-- Fotka predajne s odkazom na album -->
+            <!-- Google Maps iframe -->
             <div class="col-md-6">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#photoAlbumModal">
-                    <img src="images/cajovePecivo/linecke.png" alt="Fotka predajne" class="img-fluid rounded">
-                </a>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2139.2452326037486!2d18.39867981612119!3d48.39351137924614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476bfa19c795c71d%3A0x6b8821fdc4fce73a!2sJanka%20Kr%C3%A1%C4%BEa%2013%2C%2095301%20Zlat%C3%A9%20Moravce!5e0!3m2!1ssk!2ssk!4v1694168977244!5m2!1ssk!2ssk" 
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </div>
@@ -1718,6 +1849,8 @@
 <script src="js/jquery-3.6.0.js"></script>
 <!-- Isotope JS -->
 <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+<!-- Lightbox2 JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 
 <!-- Váš vlastný JS súbor -->
 <script src="/js/script.js"></script>

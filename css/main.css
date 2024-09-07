@@ -73,11 +73,13 @@ html {
     scroll-behavior: auto !important; /* Zruší plynulý prechod pri scrollovaní */
 }
 
-
+.back-button a {
+    display: inline-block;  /* Uistite sa, že tlačidlo má vlastné zarovnanie */
+}
 
 /* Header */
 #header {
-    background: url(../images/ikony/breadUvodka.jpg) center/cover no-repeat;
+    background: url(../images/ikony/breadUvodka.webp) center/cover no-repeat;
     position: relative;
     padding-bottom: 100px; /* Pridaj padding na spodok, aby si uvoľnil miesto pre ikony */
 }
@@ -420,6 +422,19 @@ input[type="time"]::-moz-calendar-picker-indicator {
     justify-content: center; /* Horizontálne zarovnanie obrázka */
     height: auto; /* Výška kontajnera sa prispôsobí obrázku */
     max-height: 500px; /* Nastavte maximálnu výšku podľa výšky stĺpca s kontaktmi */
+}
+
+#galeria .gallery-item {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+#galeria .gallery-item img {
+    transition: transform 0.3s ease-in-out;
+}
+
+#galeria .gallery-item img:hover {
+    transform: scale(1.1);
 }
 
 
