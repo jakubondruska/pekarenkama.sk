@@ -145,7 +145,6 @@ html {
     .okamih { font-size: 35px; }
 }
 
-
 /* Ikony kontajner */
 .icons-container {
     display: flex;
@@ -217,7 +216,6 @@ html {
         font-size: 15px; /* Trochu väčšie písmo pre tablety */
     }
 }
-
 
 /* Tlačidlá */
 .btn {
@@ -319,7 +317,6 @@ html {
     }
 }
 
-
 /* Štýly pre sekciu alergény */
 .alergeny-section {
     background-size: cover; /* Zabezpečí, že pozadie pokryje celý element */
@@ -340,7 +337,6 @@ html {
     border-radius: 10px; /* Zaoblené rohy */
     
 }
-
 
 #objednavka .form-control,
 #objednavka .form-select {
@@ -375,7 +371,6 @@ input[type="date"]::-webkit-calendar-picker-indicator,
 input[type="time"]::-webkit-calendar-picker-indicator {
     filter: invert(1); /* Invertovanie farieb, aby sa ikony stali bielymi */
     width: 3rem; /* Zvýšiť šírku ikony */
-    
 }
 
 /* Pre Firefox a iné prehliadače */
@@ -383,7 +378,6 @@ input[type="date"]::-moz-calendar-picker-indicator,
 input[type="time"]::-moz-calendar-picker-indicator {
     color: #ffffff; /* Nastavenie farby textu na bielu, ak to prehliadač podporuje */
     width: 3rem; /* Zvýšiť šírku ikony */
-    
 }
 
 /* Kontakty sekcia */
@@ -404,8 +398,6 @@ input[type="time"]::-moz-calendar-picker-indicator {
 .contact-info a:hover {
     text-decoration: underline;
 }
-
-
 
 /* Prispôsobenie výšky obrázka albumu */
 #kontakty .col-md-6 img {
@@ -437,12 +429,10 @@ input[type="time"]::-moz-calendar-picker-indicator {
     transform: scale(1.1);
 }
 
-
-
-
-
-
-
+#objednavka {
+    position: relative;
+    z-index: 1;
+}
 
 /* media queries */
 @media(min-width: 992px){
