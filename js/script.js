@@ -1,38 +1,42 @@
 $(document).ready(function() {
+    // Initialize Isotope
     var $grid = $('.collection-list').isotope({
         itemSelector: '.col-lg-4',
         layoutMode: 'fitRows',
-        filter: '.sladke' // Predvolený filter
+        filter: '.special' // Default filter
     });
 
+    // Filter items on button click
     $('.filter-button-group').on('click', 'button', function() {
         var filterValue = $(this).attr('data-filter');
         resetFilterBtns();
         $(this).addClass('active-filter-btn');
         $grid.isotope({ filter: filterValue });
 
-        // Zobrazovanie tlačidiel "Späť na kategórie"
+        // Show appropriate back buttons
         showBackButtons(filterValue);
     });
 
+    // Reset filter buttons
     function resetFilterBtns() {
         $('.filter-button-group button').removeClass('active-filter-btn');
     }
 
+    // Show back buttons for current filter
     function showBackButtons(filterValue) {
-        // Skryť všetky tlačidlá
+        // Hide all back buttons
         $('.back-button').hide();
 
-        // Zobraziť tlačidlo len pre aktuálne filtrovanú kategóriu
+        // Show back button for the current filter
         if (filterValue !== '*') {
             $('.back-button' + filterValue).show();
         }
     }
 
-    // Počiatočné zobrazenie tlačidiel
-    showBackButtons('.sladke'); // Predvolený filter
+    // Initial display of back buttons
+    showBackButtons('.special'); // Default filter
 
-    // Zatvorenie menu po kliknutí na položku
+    // Close navbar menu on link click
     $('.navbar-nav .nav-link').on('click', function() {
         var navbarToggler = document.querySelector('.navbar-toggler');
         if (navbarToggler) {
@@ -43,7 +47,7 @@ $(document).ready(function() {
         }
     });
 
-    // Zmena štýlu navbar pri skrolovaní
+    // Change navbar style on scroll
     window.onscroll = function() {
         var navbar = document.querySelector('.navbar');
         var iconsSection = document.querySelector('#icons-section');
