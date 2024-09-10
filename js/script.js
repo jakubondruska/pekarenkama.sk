@@ -147,5 +147,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Validácia objednávky pri zmene času
     timeInput.addEventListener('input', validateOrder);
 });
+
+// JavaScript pre dynamické nastavenie predmetu
+document.getElementById('contact-form').addEventListener('submit', function() {
+    var meno = document.getElementById('name').value; // Získanie mena z inputu
+    document.getElementById('subject').value = 'Prišla ti nová objedávka od ' + meno; // Nastavenie predmetu
+});
     
 

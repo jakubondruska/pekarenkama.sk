@@ -206,7 +206,7 @@
                             <div class="card h-100">
                                 <img src="images/slane/zeleninovaMisa1.webp" class="card-img-top" alt="zeleninova misa 1">
                                 <div class="card-body d-flex flex-column">
-                                    <h5 class="card-title">Obložená misa 1</h5>
+                                    <h5 class="card-title">Zeleninová misa 1</h5>
                                     <hr>
                                     <p class="card-text"><strong>Alergény:</strong> 7</p>
                                     <p class="card-text"><strong>Dostupnosť:</strong></p>
@@ -2311,7 +2311,7 @@
 
             <!-- Meno -->
             <div class="col-md-6">
-                <input type="text" id="name" name="name" class="form-control bg-transparent text-white" required placeholder="Meno">
+                <input type="text" id="name" name="meno" class="form-control bg-transparent text-white" required placeholder="Meno">
             </div>
             
             <!-- Email -->
@@ -2321,24 +2321,24 @@
             
             <!-- Telefónne číslo -->
             <div class="col-md-6">
-                <input type="tel" id="phone" name="phone" class="form-control bg-transparent text-white" required placeholder="Telefónne číslo">
+                <input type="tel" id="phone" name="telefónne číslo" class="form-control bg-transparent text-white" required placeholder="Telefónne číslo">
             </div>
 
             <!-- Výber dátumu -->
             <div class="col-md-3">
                 <label for="date" class="form-label">Výber dátumu</label>
-                <input type="date" id="date" name="date" class="form-control bg-transparent text-white" required>
+                <input type="date" id="date" name="dátum objednávky" class="form-control bg-transparent text-white" required>
             </div>
 
             <!-- Výber času -->
             <div class="col-md-3">
                 <label for="time" class="form-label">Výber času</label>
-                <input type="time" id="time" name="time" class="form-control bg-transparent text-white" required>
+                <input type="time" id="time" name="čas objedávky" class="form-control bg-transparent text-white" required>
             </div>
            
             <!-- Správa -->
             <div class="col-12">
-                <textarea id="message" name="message" class="form-control bg-transparent text-white" rows="5" required placeholder="Správa"></textarea>
+                <textarea id="message" name="správa" class="form-control bg-transparent text-white" rows="5" required placeholder="Správa"></textarea>
             </div>
 
             <!-- Honeypot na ochranu proti spamu -->
@@ -2349,8 +2349,12 @@
                 <button type="submit" class="btn btn-primary text-uppercase" id="submit-btn">Odoslať</button>
             </div>
 
+            <!-- Skrytý predmet správy, dynamicky generovaný pomocou JavaScriptu -->
+            <input type="hidden" id="subject" name="subject" value="">
+
             <!-- Presmerovanie po úspešnom odoslaní -->
             <input type="hidden" name="redirect" value="https://pekarenkama.sk/dakujeme.html">
+        
         </form>
         <hr>
          
