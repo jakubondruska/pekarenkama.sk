@@ -79,7 +79,7 @@ html {
 
 /* Header */
 #header {
-    background: url(../images/ikony/uvodnaFotoPecivo.webp) center/cover no-repeat;
+    background: url(../images/ikony/finalFotkaPecivo.webp) center/cover no-repeat;
     position: relative;
     padding-bottom: 100px; /* Pridaj padding na spodok, aby si uvoľnil miesto pre ikony */
 }
