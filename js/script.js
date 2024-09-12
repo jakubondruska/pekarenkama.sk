@@ -3,7 +3,7 @@ $(document).ready(function() {
     var $grid = $('.collection-list').isotope({
         itemSelector: '.col-lg-4',
         layoutMode: 'fitRows',
-        filter: '.special' // Default filter
+        filter: '.bezlepkove' // Default filter
     });
 
     // Filter items on button click
